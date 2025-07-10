@@ -39,6 +39,7 @@ header{
 }
 header > h1 {
     color: white;
+    font-weight: normal;
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
     font-size: 3em;
@@ -53,6 +54,7 @@ header > p {
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.205);
+    margin-bottom: 50px;
 
 }
 
@@ -62,7 +64,7 @@ nav {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.137);
 }
 nav > a { 
-    color: white;
+    color: var(--cor02);
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
@@ -127,6 +129,45 @@ main img.pequeno{
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+div.video {
+    background-color: #063d1e;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside {
+    background: var(--cor02);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
+}
+
+aside > h3{
+    background: var(--cor05);
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
 }
 
 footer {
